@@ -1,0 +1,10 @@
+apiVersion: v1 # 必須
+kind: Pod # 必須
+metadata: # 必須
+  name: nginx
+spec: # 必須。オブジェクトの望ましい状態
+  containers:
+  - name: nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
